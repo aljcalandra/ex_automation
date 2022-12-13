@@ -1,0 +1,10 @@
+<!doctype html>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+</head>
+<title>Hello from Flask</title>
+{% if value %}
+  <h1>Hello {{ value }}!</h1>
+{% else %}
+  <h1>Hello, GET!</h1>
+{% endif %}
